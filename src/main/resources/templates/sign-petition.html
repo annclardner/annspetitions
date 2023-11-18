@@ -12,7 +12,6 @@
 <body style="background-color: papayawhip">
 
 <div class="container">
-
     <br>
     <br>
 
@@ -22,31 +21,19 @@
         <div class="shadow p-3 mb-4 bg-white rounded">
 
 
-            <table class="table">
-                <thead>
-                <tr>
 
-                    <th scope="col">Petition</th>
-                    <th scope="col">Sign</th>
-                </tr>
+            <form action="/Signature" >
+                <input type="hidden"  name="id" th:value="${param.id}"></input>
 
-                </thead>
-                <tbody>
-                <tr th:each="p : ${petitions}">
-                    <td  th:text="${p.petition}"></td>
+                Name : <input type="text" name="email"  class="Required" />
+                E-Mail : <input type="text" name="name"  class="Required"/>
 
-
-                    <td><a th:href="@{/SignPetition(id=${p.id})}">Sign Petition</a></td>
-                </tr>
-                </tbody>
-            </table>
-
+                <input type="submit" value="Sign">
+            </form>
 
         </div>
     </div>
-
 </div>
-
 
 </body>
 </html>
