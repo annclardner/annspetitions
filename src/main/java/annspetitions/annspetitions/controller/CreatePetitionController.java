@@ -34,4 +34,12 @@ public class CreatePetitionController {
     public String searchPetitions(ModelMap model){
         return "search-petition";
     }
+
+
+    @RequestMapping(value="/search-result-petition")
+    public String searchResultPetitions(ModelMap model, @RequestParam String search){
+        model.put("petitions", service.retrieveSearchPetitions(search));
+
+        return "search-result-petition";
+    }
 }

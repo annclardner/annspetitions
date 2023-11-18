@@ -48,16 +48,28 @@
 
         <div class="shadow p-3 mb-4 bg-white rounded">
 
+            <table class="table">
+                <thead>
+                <tr>
 
-            <form action="/search-result-petition" class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
-                <br>
-                <input type="submit" value="Search">
-            </form>
+                    <th scope="col">Petition</th>
+                    <th scope="col">Sign</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                <tr th:each="p : ${petitions}">
+                    <td  th:text="${p.petition}"></td>
+
+
+                    <td><a th:href="@{/SignPetition(id=${p.id})}">Sign Petition</a></td>
+                </tr>
+                </tbody>
+            </table>
+
 
         </div>
     </div>
 </div>
-
 </body>
 </html>
