@@ -10,6 +10,7 @@
 
 
 <body style="background-color: papayawhip">
+
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
@@ -37,7 +38,6 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
     </div>
 </nav>
-
 <div class="container">
 
     <br>
@@ -49,33 +49,15 @@
         <div class="shadow p-3 mb-4 bg-white rounded">
 
 
-            <table class="table">
-                <thead>
-                <tr>
-
-                    <th scope="col">Petition</th>
-                    <th scope="col">Sign</th>
-                </tr>
-
-                </thead>
-                <tbody>
-                <tr th:each="p : ${petitions}">
-                    <td  th:text="${p.petition}"></td>
-
-
-                    <td><a th:href="@{/SignPetition(id=${p.id})}">Sign Petition</a></td>
-                </tr>
-                </tbody>
-            </table>
-
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                <br>
+                <input type="submit" value="Search">
+            </form>
 
         </div>
     </div>
-
 </div>
-
 
 </body>
 </html>
-
-
