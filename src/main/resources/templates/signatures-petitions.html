@@ -58,14 +58,21 @@
 
             <div class="shadow p-3 mb-4 bg-white rounded">
 
-                <span th:text="${signatures}"></span>
+                <table class="table">
+                    <thead>
+                    <tr>
 
-                <table>
-
-
-                    <td><a href="/SignPetition">Sign Petition</a></td>
+                        <th scope="col">Signatures</th>
 
                     </tr>
+
+                    </thead>
+                    <tbody>
+                    <tr th:each="s : ${signatures}">
+                        <td  th:text="${s.name}"></td>
+
+                    </tr>
+                    </tbody>
                 </table>
 
 
