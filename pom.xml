@@ -8,11 +8,11 @@
 		<version>3.1.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>annspetition</groupId>
-	<artifactId>annspetition</artifactId>
+	<groupId>annspetitions</groupId>
+	<artifactId>annspetitions</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>annspetition</name>
+	<name>annspetitions</name>
 	<description>Online Petition Project</description>
 	<properties>
 		<java.version>17</java.version>
