@@ -12,12 +12,10 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import annspetitions.annspetitions.service.PetitionService;
 import annspetitions.annspetitions.service.SignatureService;
 
-import java.util.Date;
-
 @Controller
 @SessionAttributes("id")
 
-public class SignPetition {
+public class SignPetitionController {
 
 
     @Autowired

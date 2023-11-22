@@ -10,7 +10,6 @@ import annspetitions.annspetitions.model.Petitions;
 public class PetitionService {
     private static ArrayList<Petitions> Petitions = new ArrayList<Petitions>();
     private static int PetitionsCount = 3;
-
     static {
         Petitions.add(new Petitions(1, "Petition 1"));
         Petitions.add(new Petitions(2, "Petition 2"));
