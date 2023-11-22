@@ -10,24 +10,23 @@
 
 
 <body style="background-color: papayawhip">
-
 <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
             <li class="nav-item active">
-                <form action="/">
+                <form th:action="@{/}">
                     <button type="submit" class = "btn nav-link">Create Petitions</button>
                 </form>
             </li>
             </li>
             <li class="nav-item">
-                <form action="/petitions">
+                <form th:action="@{/petitions}">
                     <button type="submit" class = "btn nav-link">View Petitions</button>
                 </form>
             </li>
             <li class="nav-item">
-                <form action="/search-petitions">
+                <form th:action="@{/search-petitions}">
                     <button type="submit" class = "btn nav-link">Search Petitions</button>
                 </form>
             </li>

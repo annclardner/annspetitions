@@ -17,18 +17,18 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
             <li class="nav-item active">
-                <form action="/">
+                <form th:action="@{/}">
                     <button type="submit" class = "btn nav-link">Create Petitions</button>
                 </form>
             </li>
             </li>
             <li class="nav-item">
-                <form action="/petitions">
+                <form th:action="@{/petitions}">
                     <button type="submit" class = "btn nav-link">View Petitions</button>
                 </form>
             </li>
             <li class="nav-item">
-                <form action="/search-petitions">
+                <form th:action="@{/search-petitions}">
                     <button type="submit" class = "btn nav-link">Search Petitions</button>
                 </form>
             </li>
@@ -51,7 +51,7 @@
     <br>
     <div class="col-md-12">
 
-        <form action="/add-petition" method="POST">
+        <form th:action="@{/add-petition}" method="POST">
 
             <div class="shadow p-3 mb-4 bg-white rounded">
                 <div class="col-sm-12">

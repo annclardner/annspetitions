@@ -16,18 +16,18 @@
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
             <li class="nav-item active">
-                <form action="/">
+                <form th:action="@{/}">
                     <button type="submit" class = "btn nav-link">Create Petitions</button>
                 </form>
             </li>
             </li>
             <li class="nav-item">
-                <form action="/petitions">
+                <form th:action="@{/petitions}">
                     <button type="submit" class = "btn nav-link">View Petitions</button>
                 </form>
             </li>
             <li class="nav-item">
-                <form action="/search-petitions">
+                <form th:action="@{/search-petitions}">
                     <button type="submit" class = "btn nav-link">Search Petitions</button>
                 </form>
             </li>
@@ -54,7 +54,7 @@
 
 
 
-            <form action="/Signature" >
+            <form th:action="@{/Signature}" >
                 <input type="hidden"  name="id" th:value="${param.id}"></input>
 
                 Name : <input type="text" name="name"  class="Required" />
